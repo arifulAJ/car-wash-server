@@ -56,6 +56,7 @@ app.get('/',(req,res)=>{
     res.send("the name of the express car");
 })
 app.get('/hello',(req,res)=>{
+    console.log("object");
     res.send('hello update here')
 })
 
