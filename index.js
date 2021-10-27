@@ -52,7 +52,7 @@ run().catch(console.dir);
 
 app.get('/',(req,res)=>{
   
-    res.send("the name of the express car service");
+    res.send("the name of the express car");
 })
 
 app.listen(port,()=>{
