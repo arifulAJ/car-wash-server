@@ -3,10 +3,10 @@ const { MongoClient } = require('mongodb');
 const ObjectId=require('mongodb').ObjectId
  const cors=require ('cors');
  require('dotenv').config()
-const { json } = require('express');
+// const { json } = require('express');
 const app=express();
  app.use(cors());
- app.use(json())
+ app.use(express.json())
 
 const port=process.env.PORT || 5000;
  
