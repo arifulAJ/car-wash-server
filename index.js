@@ -51,8 +51,11 @@ async function run(){
 run().catch(console.dir);
 
 app.get('/',(req,res)=>{
-  
+  console.log(" come ont");
     res.send("the name of the express car");
+})
+app.get('/hello',(req,res)=>{
+    res.send('hello update here')
 })
 
 app.listen(port,()=>{
